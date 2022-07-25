@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    gap: 2rem;
+    padding-left: 25rem;
+    padding-top: 5rem;
+}
+
+.logo-img{
+    width: 100px;
+    height: 100px;
+    margin-top: -15px ;
+
+}
+
