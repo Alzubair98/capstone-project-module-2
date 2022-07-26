@@ -28,3 +28,55 @@ body {
   padding-left: 10rem;
   gap: 5rem;
 }
+
+.popUp {
+  display: none;
+  position: fixed;
+  padding-top: 2rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid black;
+  width: 80vw;
+  height: 100vh;
+  z-index: 1300;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: hidden;
+}
+
+.popUp_Content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.closeBtn {
+  color: #aaa;
+  float: right !important;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bookCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popUpImg {
+  height: 60vh;
+  width: 30vw;
+}
