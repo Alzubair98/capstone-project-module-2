@@ -1,4 +1,4 @@
-import { sendLikes } from './post&getLikes.js';
+import { getLikes, sendLikes } from './post&getLikes.js';
 
 const url = 'http://openlibrary.org/subjects/love.json?published_in=1800-1801&details=false';
 
@@ -46,6 +46,8 @@ const getBooks = () => {
     booksGenerator(books);
     postLike(books);
   });
+
+
 };
 
 export { getBooks, booksGenerator };
