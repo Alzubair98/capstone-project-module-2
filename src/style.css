@@ -22,7 +22,7 @@ body {
   margin-top: -15px;
 }
 
-.books-continer{
+.books-continer {
   display: grid;
   grid-template-columns: auto auto auto;
   padding-left: 10rem;
