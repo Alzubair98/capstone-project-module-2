@@ -5,7 +5,7 @@ const sendLikes = (name) => {
     method: 'POST',
     headers: { 'Content-type': 'application/json; charset=UTF-8' },
     body: JSON.stringify({
-      item_id: name,
+      'item_id': name,
     }),
   });
 };
