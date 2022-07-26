@@ -1,4 +1,4 @@
-import { sendLikes } from './post&getLikes.js';
+import { sendLikes , getLikes} from './post&getLikes.js';
 
 const url = 'http://openlibrary.org/subjects/love.json?published_in=1800-1801&details=false';
 

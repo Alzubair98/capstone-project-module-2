@@ -11,7 +11,10 @@ const sendLikes = (name) => {
 };
 
 const getLikes = () => {
-  // under maintaince
+  fetch(LikeAPI).then(async (res)=>{
+    const likesData = await res.json();
+    return likesData;
+  })
 };
 
 export { sendLikes, getLikes };
