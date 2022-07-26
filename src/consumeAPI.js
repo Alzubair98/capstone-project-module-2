@@ -1,6 +1,10 @@
+
+import { sendLikes } from './post&getLikes.js';
+
 import popUp from './popUp.js';
 
 const url = 'http://openlibrary.org/subjects/love.json?published_in=1800-1801&details=false';
+
 const bookContiner = document.querySelector('.books-continer');
 
 const booksGenerator = (array) => {
@@ -10,6 +14,8 @@ const booksGenerator = (array) => {
 
     const likeBtn = document.createElement('button');
     likeBtn.innerHTML = 'Like';
+    likeBtn.classList.add('like');
+    likeBtn.setAttribute('id', i);
 
     const commentBtn = document.createElement('button');
     commentBtn.className = 'commentBtn';
@@ -26,10 +32,24 @@ const booksGenerator = (array) => {
   }
 };
 
+const postLike = (array) => {
+  bookContiner.addEventListener('click', (e) => {
+    if (e.target.classList.contains('like')) {
+      const { id } = e.target;
+      const name = array[id].title;
+      sendLikes(name);
+    }
+  });
+};
+
 const getBooks = () => {
   fetch(url).then(async (res) => {
     const data = await res.json();
-    booksGenerator([...data.works]);
+    const books = data.works;
+    return books;
+  }).then((books) => {
+    booksGenerator(books);
+    postLike(books);
   });
 };
 
