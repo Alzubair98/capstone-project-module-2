@@ -6,5 +6,6 @@ import { getLikes } from './post&getLikes.js';
 const logoImage = document.querySelector('.logo-img');
 logoImage.src = logo;
 
+
 getBooks();
 getLikes();

@@ -1,4 +1,7 @@
+
 import { sendLikes } from './post&getLikes.js';
+
+import popUp from './popUp.js';
 
 const url = 'http://openlibrary.org/subjects/love.json?published_in=1800-1801&details=false';
 
@@ -15,6 +18,8 @@ const booksGenerator = (array) => {
     likeBtn.setAttribute('id', i);
 
     const commentBtn = document.createElement('button');
+    commentBtn.className = 'commentBtn';
+    commentBtn.onclick = popUp;
     commentBtn.innerHTML = 'Comment';
 
     const name = document.createElement('h3');
