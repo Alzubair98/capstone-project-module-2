@@ -1,4 +1,4 @@
-import { sendLikes , getLikes} from './post&getLikes.js';
+import { sendLikes } from './post&getLikes.js';
 
 const url = 'http://openlibrary.org/subjects/love.json?published_in=1800-1801&details=false';
 
@@ -27,7 +27,7 @@ const booksGenerator = (array) => {
   }
 };
 
-const postLIike = (array) => {
+const postLike = (array) => {
   bookContiner.addEventListener('click', (e) => {
     if (e.target.classList.contains('like')) {
       const { id } = e.target;
@@ -44,7 +44,7 @@ const getBooks = () => {
     return books;
   }).then((books) => {
     booksGenerator(books);
-    postLIike(books);
+    postLike(books);
   });
 };
 
