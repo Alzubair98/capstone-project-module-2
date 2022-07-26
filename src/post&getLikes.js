@@ -5,13 +5,13 @@ const sendLikes = (name) => {
     method: 'POST',
     headers: { 'Content-type': 'application/json; charset=UTF-8' },
     body: JSON.stringify({
-      'item_id': name,
+      item_id: name,
     }),
   });
 };
 
 const getLikes = () => {
-  console.log('likes');
+  // under maintaince
 };
 
 export { sendLikes, getLikes };
