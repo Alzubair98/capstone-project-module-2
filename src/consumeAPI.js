@@ -1,6 +1,7 @@
 import { getLikes, sendLikes } from './post&getLikes.js';
-
 import popUp from './popUp.js';
+
+import bookCounter from './booksCounter.js';
 
 const url = 'http://openlibrary.org/subjects/love.json?published_in=2000-2010&details=false&limit=12';
 
@@ -64,11 +65,4 @@ const getBooks = () => {
 };
 
 
-
-const bookscounter = document.querySelector('.famous_books');
-
-const bookCounter = (array) => {
-      bookscounter.innerHTML = 'Famous Books ' + array.length;
-}
-
-export { getBooks, booksGenerator, bookCounter };
+export { getBooks, booksGenerator };
