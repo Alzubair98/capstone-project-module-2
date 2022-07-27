@@ -1,4 +1,3 @@
-
 import { sendLikes } from './post&getLikes.js';
 
 import popUp from './popUp.js';
