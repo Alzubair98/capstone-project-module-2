@@ -85,3 +85,8 @@ body {
   height: 60vh;
   width: 30vw;
 }
+
+h3 {
+  align-self: center;
+  text-align: center;
+}
