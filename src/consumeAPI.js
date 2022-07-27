@@ -15,11 +15,13 @@ const booksGenerator = (array) => {
     likeBtn.setAttribute('id', i);
 
     const likeCount = document.createElement('p');
-    likeCount.textContent = '5 likes';
+    likeCount.textContent = '';
+
+    getLikes(array[i].title, likeCount);
 
     likeBtn.addEventListener('click', () => {
         const name = array[i].title;
-        getLikes(name, likeCount);
+        setTimeout(() => getLikes(name, likeCount),600);
     });
 
     const commentBtn = document.createElement('button');

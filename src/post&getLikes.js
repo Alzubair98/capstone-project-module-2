@@ -17,7 +17,7 @@ const getLikes = (name, button) => {
     likesData.forEach(element => {
         if(element.item_id  === name){
             const number = element.likes
-            button.innerHTML = 'like' + number;
+            button.innerHTML =  number + ' likes' ;
         }        
     })
   })
