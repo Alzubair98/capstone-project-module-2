@@ -20,8 +20,8 @@ const booksGenerator = (array) => {
     getLikes(array[i].title, likeCount);
 
     likeBtn.addEventListener('click', () => {
-        const name = array[i].title;
-        setTimeout(() => getLikes(name, likeCount),600);
+      const name = array[i].title;
+      setTimeout(() => getLikes(name, likeCount), 600);
     });
 
     const commentBtn = document.createElement('button');
@@ -56,8 +56,6 @@ const getBooks = () => {
     booksGenerator(books);
     postLike(books);
   });
-
-
 };
 
 export { getBooks, booksGenerator };
