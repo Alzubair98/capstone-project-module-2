@@ -39,13 +39,18 @@ body {
   right: 0;
   border: 1px solid black;
   width: 80vw;
-  height: 100vh;
+  height: 90vh;
   z-index: 1300;
   background-color: rgba(0, 0, 0, 0.4);
   overflow: auto;
   margin-left: auto;
   margin-right: auto;
-  overflow-y: hidden;
+}
+
+.commentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .popUp_Content {
