@@ -19,7 +19,7 @@ const booksGenerator = (array) => {
     likeBtn.setAttribute('id', i);
 
     const likeCount = document.createElement('p');
-    likeCount.classList.add('likeCounter')
+    likeCount.classList.add('likeCounter');
     likeCount.textContent = '';
 
     getLikes(array[i].title, likeCount);

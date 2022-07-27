@@ -8,8 +8,8 @@ import comment from './commentsHandler.js';
 const logoImage = document.querySelector('.logo-img');
 logoImage.src = logo;
 
-const body = document.body;
-body.style.backgroundImage = "url("+backgoround+")";
+const { body } = document;
+body.style.backgroundImage = `url(${backgoround})`;
 document.querySelector('.commentForm').onsubmit = comment;
 
 getBooks();
