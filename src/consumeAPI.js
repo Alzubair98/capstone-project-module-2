@@ -2,12 +2,14 @@ import { getLikes, sendLikes } from './post&getLikes.js';
 
 import popUp from './popUp.js';
 
-const url = 'http://openlibrary.org/subjects/love.json?published_in=1800-1801&details=false';
+import bookCounter from './booksCounter.js';
+
+const url = 'http://openlibrary.org/subjects/love.json?published_in=2000-2010&details=false&limit=12';
 
 const bookContiner = document.querySelector('.books-continer');
 
 const booksGenerator = (array) => {
-  for (let i = 0; i < 6; i += 1) {
+  for (let i = 0; i < array.length; i += 1) {
     const image = document.createElement('img');
     image.src = `https://covers.openlibrary.org/b/id/${array[i].cover_id}-M.jpg`;
 
@@ -59,6 +61,7 @@ const getBooks = () => {
   }).then((books) => {
     booksGenerator(books);
     postLike(books);
+    bookCounter(books);
   });
 };
 

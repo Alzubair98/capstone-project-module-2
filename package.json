@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Alzubair98/capstone-project-module-2#readme",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.18.6",
+    "@testing-library/jest-dom": "^5.16.4",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
@@ -42,5 +43,9 @@
   },
   "dependencies": {
     "babelrc": "^0.0.7"
+  },
+  "jest": {
+    "resetMocks": false,
+    "testEnvironment": "jest-environment-jsdom"
   }
 }
