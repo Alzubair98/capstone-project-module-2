@@ -1,3 +1,5 @@
+import { getComments } from './commentsHandler.js';
+
 const url = 'http://openlibrary.org/subjects/love.json?published_in=1800-1801&details=false';
 let coverId;
 let imgUrl;
@@ -32,6 +34,9 @@ const popUp = (e) => {
   coverId = imgUrl.replace('https://covers.openlibrary.org/b/id/', '').split('-')[0];
   coverId = Number(coverId);
   getBookDetails();
+  setTimeout(() => {
+    getComments(String(document.querySelector('.popUp').querySelector('.title').innerText));
+  }, 1000);
   document.querySelector('.popUp').querySelector('.closeBtn').onclick = closePopUp;
   document.querySelector('.popUp').style.display = 'block';
 };

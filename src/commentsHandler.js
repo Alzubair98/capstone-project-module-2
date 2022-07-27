@@ -1,6 +1,29 @@
 import Comment from './Comment.js';
+import { LikeAPI } from './post&getLikes.js';
 
-const commentsUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/txIV0x61cJerTV943Ps8/comments';
+const commentsUrl = LikeAPI.replace('likes', 'comments');
+
+const showComments = (commentsArray) => {
+  const container = document.querySelector('.popUp').querySelector('.commentsContainer');
+  container.innerHTML = '';
+  for (let i = 0; i < commentsArray.length; i += 1) {
+    const commentElement = document.createElement('p');
+    commentElement.innerText = `${commentsArray[i].creation_date} ${commentsArray[i].username}:${commentsArray[i].comment}`;
+    container.appendChild(commentElement);
+  }
+};
+const getComments = async (itemId) => {
+  const getCommentUrl = `${commentsUrl}?item_id=${itemId}`;
+  await fetch(getCommentUrl)
+    .then((response) => response.json())
+    .then((result) => {
+      showComments(result);
+    })
+    .catch((error) => {
+      // eslint-disable-next-line no-unused-vars
+      const err = error;
+    });
+};
 
 const postComment = async (comment) => {
   await fetch(commentsUrl, {
@@ -12,6 +35,7 @@ const postComment = async (comment) => {
   }).then((response) => response.json())
     .then((json) => json)
     .catch((err) => err);
+  getComments(comment.item_id);
 };
 
 const comment = (e) => {
@@ -23,4 +47,4 @@ const comment = (e) => {
   postComment(comment);
 };
 
-export default comment;
+export { comment, getComments };
