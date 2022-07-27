@@ -60,9 +60,8 @@ const getBooks = () => {
   }).then((books) => {
     booksGenerator(books);
     postLike(books);
-    bookCounter(books)
+    bookCounter(books);
   });
 };
-
 
 export { getBooks, booksGenerator };
