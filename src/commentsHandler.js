@@ -5,7 +5,10 @@ const commentsUrl = LikeAPI.replace('likes', 'comments');
 
 const showComments = (commentsArray) => {
   const container = document.querySelector('.popUp').querySelector('.commentsContainer');
+  const containerTitle = document.createElement('h3');
+  containerTitle.innerText = 'Comments';
   container.innerHTML = '';
+  container.appendChild(containerTitle);
   for (let i = 0; i < commentsArray.length; i += 1) {
     const commentElement = document.createElement('p');
     commentElement.innerText = `${commentsArray[i].creation_date} ${commentsArray[i].username}:${commentsArray[i].comment}`;
