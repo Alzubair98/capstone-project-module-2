@@ -14,6 +14,14 @@ const booksGenerator = (array) => {
     likeBtn.classList.add('like');
     likeBtn.setAttribute('id', i);
 
+    const likeCount = document.createElement('p');
+    likeCount.textContent = '5 likes';
+
+    likeBtn.addEventListener('click', () => {
+        const name = array[i].title;
+        getLikes(name, likeCount);
+    });
+
     const commentBtn = document.createElement('button');
     commentBtn.innerHTML = 'Comment';
 
@@ -21,7 +29,7 @@ const booksGenerator = (array) => {
     name.innerText = array[i].title;
 
     const continer = document.createElement('div');
-    continer.append(image, name, likeBtn, commentBtn);
+    continer.append(image, name, likeBtn, likeCount, commentBtn);
 
     bookContiner.appendChild(continer);
   }
