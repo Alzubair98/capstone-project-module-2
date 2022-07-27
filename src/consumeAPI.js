@@ -1,4 +1,6 @@
-import { sendLikes } from './post&getLikes.js';
+
+import { getLikes, sendLikes } from './post&getLikes.js';
+
 
 import popUp from './popUp.js';
 
@@ -16,6 +18,16 @@ const booksGenerator = (array) => {
     likeBtn.classList.add('like');
     likeBtn.setAttribute('id', i);
 
+    const likeCount = document.createElement('p');
+    likeCount.textContent = '';
+
+    getLikes(array[i].title, likeCount);
+
+    likeBtn.addEventListener('click', () => {
+      const name = array[i].title;
+      setTimeout(() => getLikes(name, likeCount), 600);
+    });
+
     const commentBtn = document.createElement('button');
     commentBtn.className = 'commentBtn';
     commentBtn.onclick = popUp;
@@ -25,7 +37,7 @@ const booksGenerator = (array) => {
     name.innerText = array[i].title;
 
     const continer = document.createElement('div');
-    continer.append(image, name, likeBtn, commentBtn);
+    continer.append(image, name, likeBtn, likeCount, commentBtn);
 
     bookContiner.appendChild(continer);
   }

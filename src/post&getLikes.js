@@ -10,10 +10,15 @@ const sendLikes = (name) => {
   });
 };
 
-const getLikes = () => {
+const getLikes = (name, button) => {
   fetch(LikeAPI).then(async (res) => {
     const likesData = await res.json();
-    return likesData;
+    likesData.forEach((element) => {
+      if (element.item_id === name) {
+        const number = element.likes;
+        button.innerHTML = `${number} likes`;
+      }
+    });
   });
 };
 
