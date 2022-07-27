@@ -10,8 +10,7 @@ body {
   margin: 0;
   padding: 0;
   background-repeat: no-repeat;
-  background-size: 100%;
-
+  background-size: 100% 100%;
 }
 
 .footer {
@@ -19,7 +18,8 @@ body {
   padding: 10px;
   border: 1px solid black;
   margin-top: 1rem;
-  background-color: #9FB4FF;
+
+  /* background-color: #9fb4ff; */
 }
 
 .logo-img {
@@ -114,20 +114,21 @@ body {
   touch-action: manipulation;
 }
 
-.like:before {
+.like::before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
+  background:
+    linear-gradient(
+      45deg,
+      #f00,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #f00
+    );
   position: absolute;
   top: -2px;
   left: -2px;
@@ -146,15 +147,17 @@ body {
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
 }
 
-.like:after {
+.like::after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -165,7 +168,6 @@ body {
   top: 0;
   border-radius: 10px;
 }
-
 
 .commentBtn {
   padding: 0.6em 2em;
@@ -182,20 +184,21 @@ body {
   touch-action: manipulation;
 }
 
-.commentBtn:before {
+.commentBtn::before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
+  background:
+    linear-gradient(
+      45deg,
+      #f00,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #f00
+    );
   position: absolute;
   top: -2px;
   left: -2px;
@@ -214,15 +217,17 @@ body {
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
 }
 
-.commentBtn:after {
+.commentBtn::after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -237,6 +242,6 @@ body {
 
 /* likecounter */
 
-.likeCounter{
- font-weight: bold;
+.likeCounter {
+  font-weight: bold;
 }
