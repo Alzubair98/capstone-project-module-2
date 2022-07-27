@@ -19,7 +19,7 @@ body {
   padding: 10px;
   border: 1px solid black;
   margin-top: 1rem;
-  background-color: #000;
+  background-color: #9FB4FF;
 }
 
 .logo-img {
@@ -232,4 +232,11 @@ body {
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+
+
+/* likecounter */
+
+.likeCounter{
+ font-weight: bold;
 }
