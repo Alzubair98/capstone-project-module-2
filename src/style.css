@@ -97,6 +97,7 @@ body {
 
 /* CSS */
 .like {
+  letter-spacing: 1px;
   padding: 0.6em 2em;
   border: none;
   outline: none;
@@ -167,6 +168,7 @@ body {
 }
 
 .commentBtn {
+  letter-spacing: 1px;
   padding: 0.6em 2em;
   border: none;
   outline: none;
