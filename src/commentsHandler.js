@@ -30,10 +30,8 @@ const getComments = async (itemId) => {
     .then((result) => {
       showComments(result);
     })
-    .catch((error) => {
+    .catch(() => {
       showComments(noComments);
-      // eslint-disable-next-line no-unused-vars
-      const err = error;
     });
 };
 
