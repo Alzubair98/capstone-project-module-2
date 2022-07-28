@@ -78,7 +78,9 @@ hr {
 }
 
 .popUp_Content {
-  background-color: #fefefe;
+  background-image: url('../asset/resource/background-image-popUp.jpg');
+  background-size: cover;
+  background-clip: padding-box;
   margin: auto;
   padding: 10px;
   border: 1px solid #888;
