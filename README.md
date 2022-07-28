@@ -12,6 +12,7 @@ This project will show number of box from an API on each book you can like and c
 - Technologies used: webpack, jest tester
 
 ## Built With
+
 - ![](http://openlibrary.org)
 - ![](https://us-central1-involvement-api.cloudfunctions.net)
 
@@ -48,3 +49,7 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+## Video
+
+![](https://www.loom.com/share/0c690c6c79bd4fdea98716538456e905)
