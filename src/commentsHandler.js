@@ -4,20 +4,18 @@ import { LikeAPI } from './post&getLikes.js';
 const commentsUrl = LikeAPI.replace('likes', 'comments');
 
 const countComments = () => {
-  const container = document.querySelector('.popUp').querySelector('.commentsContainer');
+  const container = document.querySelector('.popUp').querySelector('.bookCard');
   const commentsTitle = container.querySelector('h3');
-  const commentsCount = String([...container.querySelectorAll('p')].length);
+  const commentsCount = String([...container.querySelectorAll('.comment')].length);
   commentsTitle.innerText = `Comments(${commentsCount})`;
 };
 
 const showComments = (commentsArray) => {
   const container = document.querySelector('.popUp').querySelector('.commentsContainer');
-  const containerTitle = document.createElement('h3');
-  containerTitle.innerText = 'Comments';
   container.innerHTML = '';
-  container.appendChild(containerTitle);
   for (let i = 0; i < commentsArray.length; i += 1) {
     const commentElement = document.createElement('p');
+    commentElement.className = 'comment';
     commentElement.innerText = `${commentsArray[i].creation_date} ${commentsArray[i].username}:${commentsArray[i].comment}`;
     container.appendChild(commentElement);
   }

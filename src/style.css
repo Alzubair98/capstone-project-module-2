@@ -52,29 +52,53 @@ hr {
   margin-left: 10rem;
 }
 
+.active {
+  overflow: hidden;
+}
+
 .popUp {
   display: none;
   position: fixed;
-  padding-top: 2rem;
-  top: 0;
+  top: 2rem;
   left: 0;
   bottom: 0;
   right: 0;
   border: 1px solid black;
-  width: 80vw;
-  height: 90vh;
+  border-radius: 1em;
+  width: 70vw;
+  height: 80vh;
   z-index: 1300;
   background-color: rgba(0, 0, 0, 0.4);
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
 }
 
 .commentForm {
+  margin: 1rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
-  z-index: 1030;
+  /* z-index: 1030; */
+}
+
+.commentForm button {
+  height: 3rem;
+}
+
+.commentForm input,
+.commentForm textarea {
+  border-radius: .5em;
+  line-height:1.5;
+  padding: .5rem .2rem .5rem .2rem;
+  background-color: #FFF4F4;
+  box-shadow: inset 0px 0px 15px #FFE5E5;
+	-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+	-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+
 }
 
 .popUp_Content {
@@ -82,9 +106,10 @@ hr {
   background-size: cover;
   background-clip: padding-box;
   margin: auto;
+  padding-bottom: 2rem !important;
   padding: 10px;
   border: 1px solid #888;
-  width: 80%;
+  width: 100%;
 }
 
 .closeBtn {
@@ -117,8 +142,11 @@ hr {
 }
 
 .popUp_Content h3 {
+  margin: 1em;
   align-self: center;
   text-align: center;
+  color:rgba(66, 60, 154, 0.5);
+  font-size: 2.5em;
 }
 
 .continer_div {
@@ -475,4 +503,18 @@ hr {
   margin : .5em;
   flex-grow: 1;
   text-align:center;
+}
+
+.commentsContainer {
+  margin: .5em;
+  padding: .5em;
+  max-height: 200px;
+  overflow: auto !important;
+  background-color: rgb(214, 102, 102, .2);
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.commentsContainer:empty {
+  display: none;
 }
