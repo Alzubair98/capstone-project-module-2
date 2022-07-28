@@ -26,6 +26,7 @@ const getBookDetails = () => {
 
 const closePopUp = () => {
   document.querySelector('.popUp').style.display = 'none';
+  document.body.classList.remove('active');
 };
 
 const popUp = (e) => {
@@ -33,6 +34,7 @@ const popUp = (e) => {
   // eslint-disable-next-line prefer-destructuring
   coverId = imgUrl.replace('https://covers.openlibrary.org/b/id/', '').split('-')[0];
   coverId = Number(coverId);
+  document.body.classList.add('active');
   getBookDetails();
   setTimeout(() => {
     getComments(String(document.querySelector('.popUp').querySelector('.title').innerText));

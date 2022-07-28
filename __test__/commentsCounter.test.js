@@ -5,8 +5,10 @@
 import { showComments } from '../src/commentsHandler.js';
 
 document.body.innerHTML = `<section class="popUp">
-<div class="commentsContainer">
+<div class="bookCard">
 <h3>Comments</h3>
+<div class="commentsContainer">
+</div>
 </div>
 </section>`;
 
