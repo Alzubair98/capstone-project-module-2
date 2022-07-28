@@ -1,4 +1,4 @@
-# Project Name
+# Love Books
 
 Capstone Project Module 2 / Love Books
 
@@ -13,8 +13,8 @@ This project will show number of box from an API on each book you can like and c
 
 ## Built With APIs
 
-- ![](http://openlibrary.org)
-- ![](https://us-central1-involvement-api.cloudfunctions.net)
+- http://openlibrary.org
+- https://us-central1-involvement-api.cloudfunctions.net
 
 ## Authors
 
@@ -52,4 +52,4 @@ This project is [MIT](./MIT.md) licensed.
 
 ## Video
 
-![](https://www.loom.com/share/0c690c6c79bd4fdea98716538456e905)
+https://www.loom.com/share/0c690c6c79bd4fdea98716538456e905
