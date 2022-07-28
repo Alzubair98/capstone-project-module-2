@@ -299,6 +299,8 @@ hr {
 
 /* PopUp styling */
 
+/*animated background*/
+/* heart */
 .popUp *{
   margin: 0px;
   padding: 0px;
@@ -308,13 +310,13 @@ hr {
   font-family: 'Exo', sans-serif;
 }
 
-.popUp .area{
+/* .popUp .area{
   background: #4e54c8;  
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
   width: 100%;
-  height:100vh;
+  height:100%;
 
-}
+} */
 
 .popUp .circles{
   position: absolute;
@@ -392,7 +394,6 @@ hr {
   animation-duration: 11s;
 }
 
-/* heart */
 .circles * {
   color: #000;
   position: absolute;
@@ -451,3 +452,9 @@ hr {
 
 }
 
+/* PopUp title */
+.popUp .title {
+  margin: 1rem;
+  color: red;
+  font-family:'Trebuchet MS', sans-serif;
+}
