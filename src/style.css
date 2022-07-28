@@ -6,27 +6,50 @@
 }
 
 body {
-  height: 90vh;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+hr {
+  width: 80%;
+  border-color: white;
+  border-style: solid none none;
+}
+
+.footer-text {
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .footer {
   position: relative;
-  bottom: -60vh;
-  padding: 10px;
-  border: 1px solid black;
+  text-align: center;
 }
 
 .logo-img {
   width: 100px;
   height: 100px;
   margin-top: -15px;
+  border-radius: 30%;
 }
 
 .books-continer {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding-left: 10rem;
-  gap: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-left: 10rem;
 }
 
 .popUp {
@@ -88,5 +111,185 @@ body {
 
 .popUp_Content h3 {
   align-self: center;
+
+.continer_div {
+  position: relative;
+  min-width: 320px;
+  height: auto;
+  box-shadow:
+    inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.book_img {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  width: 100%;
+  height: 400px;
+}
+
+/* style the buttons  */
+
+/* CSS */
+.like {
+  width: 8rem;
+  margin-left: 30%;
+  letter-spacing: 1px;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: black;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.like::before {
+  content: "";
+  background:
+    linear-gradient(
+      45deg,
+      #f00,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #f00
+    );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.like::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.commentBtn {
+  width: 8rem;
+  margin-left: 30%;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: black;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.commentBtn::before {
+  content: "";
+  background:
+    linear-gradient(
+      45deg,
+      #f00,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #f00
+    );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.commentBtn::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* likecounter */
+
+.likeCounter {
+  font-weight: bold;
+  text-align: center;
+}
+
+.book_name {
   text-align: center;
 }

@@ -37,6 +37,7 @@ const popUp = (e) => {
   setTimeout(() => {
     getComments(String(document.querySelector('.popUp').querySelector('.title').innerText));
   }, 1000);
+
   document.querySelector('.popUp').querySelector('.closeBtn').onclick = closePopUp;
   document.querySelector('.popUp').style.display = 'block';
 };
