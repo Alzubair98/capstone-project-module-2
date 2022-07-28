@@ -86,7 +86,7 @@ body {
   width: 30vw;
 }
 
-h3 {
+.popUp_Content h3 {
   align-self: center;
   text-align: center;
 }
