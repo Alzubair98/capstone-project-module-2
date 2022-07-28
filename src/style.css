@@ -18,6 +18,7 @@ body {
   padding: 10px;
   border: 1px solid black;
   margin-top: 1rem;
+
   /* background-color: #9fb4ff; */
 }
 
@@ -94,24 +95,27 @@ body {
   width: 30vw;
 }
 
-.continer_div{
+.continer_div {
   position: relative;
   min-width: 320px;
   height: auto;
-  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-  inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-  5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  box-shadow:
+    inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   margin: 30px;
   transition: 0.5s;
 }
 
-.book_img{
+.book_img {
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   width: 100%;
   height: 400px;
 }
+
 /* style the buttons  */
 
 /* CSS */
@@ -269,6 +273,6 @@ body {
   text-align: center;
 }
 
-.book_name{
+.book_name {
   text-align: center;
 }
