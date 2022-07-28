@@ -22,4 +22,4 @@ const getLikes = (name, button) => {
   });
 };
 
-export { sendLikes, getLikes };
+export { sendLikes, getLikes, LikeAPI };
