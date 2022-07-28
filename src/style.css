@@ -108,6 +108,10 @@ hr {
 .popUpImg {
   height: 60vh;
   width: 30vw;
+  border-radius: 1em;
+  padding: 2em;
+  margin: 2em;
+  box-shadow: 0.5em 0.5em rgba(161, 71, 71, 0.5);
 }
 
 .popUp_Content h3 {
