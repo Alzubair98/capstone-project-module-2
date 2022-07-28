@@ -60,4 +60,4 @@ const comment = (e) => {
   postComment(comment);
 };
 
-export { comment, getComments };
+export { comment, getComments, showComments };
