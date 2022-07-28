@@ -18,7 +18,6 @@ body {
   padding: 10px;
   border: 1px solid black;
   margin-top: 1rem;
-
   /* background-color: #9fb4ff; */
 }
 
@@ -30,10 +29,12 @@ body {
 }
 
 .books-continer {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding-left: 10rem;
-  gap: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-left: 10rem;
 }
 
 .popUp {
@@ -93,10 +94,30 @@ body {
   width: 30vw;
 }
 
+.continer_div{
+  position: relative;
+  min-width: 320px;
+  height: auto;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+  inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.book_img{
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  width: 100%;
+  height: 400px;
+}
 /* style the buttons  */
 
 /* CSS */
 .like {
+  width: 8rem;
+  margin-left: 30%;
   letter-spacing: 1px;
   padding: 0.6em 2em;
   border: none;
@@ -168,6 +189,9 @@ body {
 }
 
 .commentBtn {
+  width: 8rem;
+  margin-left: 30%;
+  margin-bottom: 1rem;
   letter-spacing: 1px;
   padding: 0.6em 2em;
   border: none;
@@ -242,4 +266,9 @@ body {
 
 .likeCounter {
   font-weight: bold;
+  text-align: center;
+}
+
+.book_name{
+  text-align: center;
 }
