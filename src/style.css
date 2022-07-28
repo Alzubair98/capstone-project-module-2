@@ -456,3 +456,21 @@ hr {
   border: solid 5px transparent;
   border-radius: 1em;
 }
+
+.popUp .details {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 1rem;
+  border: 5px dashed green;
+  border-radius: 1em;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  color: blueviolet;
+}
+
+.popUp .details * {
+  margin : .5em;
+  flex-grow: 1;
+  text-align:center;
+}
