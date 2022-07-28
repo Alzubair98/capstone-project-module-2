@@ -3,6 +3,13 @@ import { LikeAPI } from './post&getLikes.js';
 
 const commentsUrl = LikeAPI.replace('likes', 'comments');
 
+const countComments = () => {
+  const container = document.querySelector('.popUp').querySelector('.commentsContainer');
+  const commentsTitle = container.querySelector('h3');
+  const commentsCount = String([...container.querySelectorAll('p')].length);
+  commentsTitle.innerText = `Comments(${commentsCount})`;
+};
+
 const showComments = (commentsArray) => {
   const container = document.querySelector('.popUp').querySelector('.commentsContainer');
   const containerTitle = document.createElement('h3');
@@ -14,6 +21,9 @@ const showComments = (commentsArray) => {
     commentElement.innerText = `${commentsArray[i].creation_date} ${commentsArray[i].username}:${commentsArray[i].comment}`;
     container.appendChild(commentElement);
   }
+
+  countComments();
+
 };
 const getComments = async (itemId) => {
   const getCommentUrl = `${commentsUrl}?item_id=${itemId}`;

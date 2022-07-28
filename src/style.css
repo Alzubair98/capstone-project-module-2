@@ -109,6 +109,10 @@ hr {
   width: 30vw;
 }
 
+
+.popUp_Content h3 {
+  align-self: center;
+
 .continer_div {
   position: relative;
   min-width: 320px;
@@ -288,5 +292,6 @@ hr {
 }
 
 .book_name {
+
   text-align: center;
 }
