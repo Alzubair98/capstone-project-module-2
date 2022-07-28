@@ -11,7 +11,8 @@ This project will show number of box from an API on each book you can like and c
 - Major languages: HTML, CSS, JavaScript
 - Technologies used: webpack, jest tester
 
-## Built With
+## Built With APIs
+
 - ![](http://openlibrary.org)
 - ![](https://us-central1-involvement-api.cloudfunctions.net)
 
@@ -33,7 +34,7 @@ This project will show number of box from an API on each book you can like and c
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/Alzubair98/capstone-project-module-2/issues).
 
 ## Show your support
 
@@ -48,3 +49,7 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+## Video
+
+![](https://www.loom.com/share/0c690c6c79bd4fdea98716538456e905)
