@@ -13,13 +13,27 @@ body {
   background-size: 100% 100%;
 }
 
+hr {
+  width: 80%;
+  border-color: white;
+  border-style: solid none none;
+}
+
+.footer-text {
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+}
+
 .footer {
   position: relative;
-  padding: 10px;
-  border: 1px solid black;
-  margin-top: 1rem;
-
-  /* background-color: #9fb4ff; */
+  text-align: center;
 }
 
 .logo-img {
