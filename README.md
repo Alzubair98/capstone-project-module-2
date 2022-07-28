@@ -8,9 +8,12 @@ This project will show number of box from an API on each book you can like and c
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages: HTML, CSS, JavaScript
+- Technologies used: webpack, jest tester
+
+## Built With
+- ![](http://openlibrary.org)
+- ![](https://us-central1-involvement-api.cloudfunctions.net)
 
 ## Authors
 
@@ -23,8 +26,8 @@ This project will show number of box from an API on each book you can like and c
 👤 **Ja'fer**
 
 - GitHub: https://github.com/jaferIdrees
-- Twitter: https://twitter.com/FitZubair
-- LinkedIn: https://www.linkedin.com/in/alzubair-alqaraghuli-272918233/
+- Twitter: [@twitterhandle](https://twitter.com/jafel_l)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/jaferll)
 
 ## 🤝 Contributing
 

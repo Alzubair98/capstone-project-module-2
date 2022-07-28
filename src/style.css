@@ -82,6 +82,7 @@ hr {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+
   /* z-index: 1030; */
 }
 
@@ -91,14 +92,13 @@ hr {
 
 .commentForm input,
 .commentForm textarea {
-  border-radius: .5em;
-  line-height:1.5;
-  padding: .5rem .2rem .5rem .2rem;
-  background-color: #FFF4F4;
-  box-shadow: inset 0px 0px 15px #FFE5E5;
-	-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
-	-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
-
+  border-radius: 0.5em;
+  line-height: 1.5;
+  padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+  background-color: #fff4f4;
+  box-shadow: inset 0 0 15px #ffe5e5;
+  -moz-box-shadow: inset 0 0 15px #ffe5e5;
+  -webkit-box-shadow: inset 0 0 15px #ffe5e5;
 }
 
 .popUp_Content {
@@ -107,7 +107,6 @@ hr {
   background-clip: padding-box;
   margin: auto;
   padding-bottom: 2rem !important;
-  padding: 10px;
   border: 1px solid #888;
   width: 100%;
 }
@@ -145,7 +144,7 @@ hr {
   margin: 1em;
   align-self: center;
   text-align: center;
-  color:rgba(66, 60, 154, 0.5);
+  color: rgba(66, 60, 154, 0.5);
   font-size: 2.5em;
 }
 
@@ -494,23 +493,23 @@ hr {
   padding: 1rem;
   border: 5px dashed green;
   border-radius: 1em;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5em;
   color: blueviolet;
 }
 
 .popUp .details * {
-  margin : .5em;
+  margin: 0.5em;
   flex-grow: 1;
-  text-align:center;
+  text-align: center;
 }
 
 .commentsContainer {
-  margin: .5em;
-  padding: .5em;
+  margin: 0.5em;
+  padding: 0.5em;
   max-height: 200px;
   overflow: auto !important;
-  background-color: rgb(214, 102, 102, .2);
+  background-color: rgb(214, 102, 102, 0.2);
   font-size: 1.5em;
   line-height: 1.5;
 }
