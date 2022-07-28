@@ -21,7 +21,9 @@ const showComments = (commentsArray) => {
     commentElement.innerText = `${commentsArray[i].creation_date} ${commentsArray[i].username}:${commentsArray[i].comment}`;
     container.appendChild(commentElement);
   }
+
   countComments();
+
 };
 const getComments = async (itemId) => {
   const getCommentUrl = `${commentsUrl}?item_id=${itemId}`;
