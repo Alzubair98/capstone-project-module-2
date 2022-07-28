@@ -69,4 +69,4 @@ const getBooks = () => {
   });
 };
 
-export { getBooks, booksGenerator };
+export { getBooks, booksGenerator, url };

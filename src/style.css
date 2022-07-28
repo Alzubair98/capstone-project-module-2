@@ -111,7 +111,8 @@ hr {
 
 .popUp_Content h3 {
   align-self: center;
-
+  text-align: center;
+}
 .continer_div {
   position: relative;
   min-width: 320px;

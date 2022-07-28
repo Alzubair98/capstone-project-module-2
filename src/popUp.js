@@ -1,6 +1,6 @@
 import { getComments } from './commentsHandler.js';
 
-const url = 'http://openlibrary.org/subjects/love.json?published_in=1800-1801&details=false';
+const url = 'http://openlibrary.org/subjects/love.json?published_in=2000-2010&details=false&limit=12';
 let coverId;
 let imgUrl;
 const showBook = (book) => {

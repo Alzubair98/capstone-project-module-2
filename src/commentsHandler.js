@@ -23,16 +23,17 @@ const showComments = (commentsArray) => {
   }
 
   countComments();
-
 };
 const getComments = async (itemId) => {
   const getCommentUrl = `${commentsUrl}?item_id=${itemId}`;
+  const noComments = [];
   await fetch(getCommentUrl)
     .then((response) => response.json())
     .then((result) => {
       showComments(result);
     })
     .catch((error) => {
+      showComments(noComments);
       // eslint-disable-next-line no-unused-vars
       const err = error;
     });
@@ -58,6 +59,8 @@ const comment = (e) => {
   const commentText = e.target.parentElement.querySelector('#commentText').value;
   const comment = new Comment(title, user, commentText);
   postComment(comment);
+  e.target.parentElement.querySelector('#userName').value = '';
+  e.target.parentElement.querySelector('#commentText').value = '';
 };
 
 export { comment, getComments, showComments };
